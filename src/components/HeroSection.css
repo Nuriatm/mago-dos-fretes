@@ -1,0 +1,100 @@
+/* Animação de entrada do título e do parágrafo */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-section {
+  position: relative;
+  background: url("http://localhost:3000/heroimagee.jpg") no-repeat center
+    center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Garante que o conteúdo não saia dos limites da seção */
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(15, 4, 112, 0.644);
+  z-index: 1;
+  transition: background-color 0.5s ease; /* Transição suave da cor do fundo */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  opacity: 0; /* Inicialmente invisível para animação */
+  animation: fadeInUp 1s forwards; /* Animação de entrada */
+}
+
+/* Estilização do título */
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  opacity: 0; /* Inicialmente invisível para animação */
+  animation: fadeInUp 1s 0.5s forwards; /* Animação de entrada com delay */
+}
+
+/* Estilização do parágrafo */
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  opacity: 0; /* Inicialmente invisível para animação */
+  animation: fadeInUp 1s 1s forwards; /* Animação de entrada com delay */
+  max-width: 80%;
+  margin: 0 auto; /* Centraliza o parágrafo horizontalmente */
+  text-align: center; /* Garante que o texto esteja centralizado */
+}
+
+/* Contêiner dos botões alinhado em linha */
+.button-container {
+  display: flex;
+  justify-content: center; /* Alinha os botões ao centro */
+  gap: 30px; /* Espaço de 10px entre os botões */
+  margin-top: 1rem; /* Espaço acima dos botões */
+}
+
+/* Estilização dos botões */
+.custom-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #761dca;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Transições para efeito de hover */
+  display: flex;
+  align-items: center; /* Alinha o ícone e o texto verticalmente */
+}
+
+.custom-button:hover {
+  background-color: #460a8a;
+  transform: scale(1.1); /* Aumenta o tamanho do botão */
+}
+
+/* Estilização do ícone dentro do botão */
+.icon {
+  margin-right: 0.5rem; /* Espaçamento entre o ícone e o texto */
+}
+
+/* Estilização do logo */
+.hero-logo {
+  max-width: 200px; /* Ajuste o valor conforme necessário */
+  height: auto; /* Mantém a proporção da imagem */
+}

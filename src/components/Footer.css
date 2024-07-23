@@ -1,0 +1,49 @@
+/* Animação Slide In */
+@keyframes slideIn {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  animation: slideIn 0.5s ease-out;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.social-links {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center; 
+}
+
+.social-links a {
+  display: flex;
+  align-items: center; 
+  margin: 0 0.5rem;
+  text-decoration: none;
+  color: white; 
+}
+
+.social-links i {
+  font-size: 20px;
+  margin-right: 0.5rem; 
+}
