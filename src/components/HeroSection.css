@@ -41,21 +41,15 @@
 }
 
 .hero-content h1 {
-<<<<<<< HEAD
   font-size: 2.7rem;
-
-=======
   font-size: 3rem;
   margin-bottom: 1rem;
->>>>>>> ef67949703d511ef7707512b7898802954b1c1d6
   opacity: 0;
   animation: fadeInUp 1s 0.5s forwards;
 }
 
 .hero-content p {
   font-size: 1.5rem;
-<<<<<<< HEAD
-
   opacity: 0;
   animation: fadeInUp 1s 1s forwards;
   max-width: 70%;
@@ -64,14 +58,12 @@
 }
 .hero-content span {
   font-size: 2rem;
-=======
   margin-bottom: 2rem;
   opacity: 0;
   animation: fadeInUp 1s 1s forwards;
   max-width: 80%;
   margin: 0 auto;
   text-align: center;
->>>>>>> ef67949703d511ef7707512b7898802954b1c1d6
 }
 
 .button-container {
@@ -88,7 +80,6 @@
   color: white;
   cursor: pointer;
   font-size: 1rem;
-<<<<<<< HEAD
   transition: transform 0.3s ease, background-color 0.3s ease, border 0.3s ease;
   display: flex;
   align-items: center;
@@ -111,7 +102,6 @@
   background-color: #500c9e;
   color: white;
   border: 2px solid transparent;
-=======
   transition: transform 0.3s ease, background-color 0.3s ease;
   display: flex;
   align-items: center;
@@ -121,7 +111,6 @@
 .custom-button:hover {
   background-color: #460a8a;
   transform: scale(1.1);
->>>>>>> ef67949703d511ef7707512b7898802954b1c1d6
 }
 
 .icon {
@@ -131,56 +120,4 @@
 .hero-logo {
   max-width: 200px;
   height: auto;
-<<<<<<< HEAD
-=======
-}
-
-@media (max-width: 768px) {
-  .hero-content h1 {
-    font-size: 2.5rem;
-  }
-
-  .hero-content p {
-    font-size: 1.2rem;
-    max-width: 90%;
-  }
-
-  .button-container {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .custom-button {
-    padding: 0.5rem 1rem;
-    font-size: 0.9rem;
-  }
-
-  .hero-logo {
-    max-width: 150px;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero-content h1 {
-    font-size: 2rem;
-  }
-
-  .hero-content p {
-    font-size: 1rem;
-    max-width: 95%;
-  }
-
-  .button-container {
-    gap: 10px;
-  }
-
-  .custom-button {
-    padding: 0.4rem 0.8rem;
-    font-size: 0.8rem;
-  }
-
-  .hero-logo {
-    max-width: 100px;
-  }
->>>>>>> ef67949703d511ef7707512b7898802954b1c1d6
 }
