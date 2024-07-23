@@ -27,10 +27,11 @@ const HeroSection = () => {
         <img src={Logo} alt="Logo" className="hero-logo" />
         <h1>MAGO DOS FRETES</h1>
         <p>
-          A Magia da Logística em Cada Entrega.
-          <br /> Com anos de experiência, oferecemos serviços rápidos, seguros e
-          eficientes para todas as suas necessidades de transporte. Confie no
-          Mago dos Fretes para transformar a sua logística!
+        <span className="span">A Magia da Logística em cada entrega.</span>
+          <br />
+          <br />
+          Com anos de experiência, oferecemos serviços rápidos, seguros e
+          eficientes para todas as suas necessidades de transporte.
         </p>
 
         <div className="button-container">
@@ -45,7 +46,7 @@ const HeroSection = () => {
           <Button
             type="button"
             onClick={handleScrollToAbout}
-            className="custom-button"
+            className="custom-button transparent"
           >
             Saiba Mais
           </Button>

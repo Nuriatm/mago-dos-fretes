@@ -21,7 +21,7 @@ const Navbar = () => {
           </li>
           <li>
             <a href="#products" onClick={(e) => handleScroll(e, "products")}>
-              Serviços
+              Produtos
             </a>
           </li>
           <li>

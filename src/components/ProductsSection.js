@@ -4,7 +4,7 @@ import "./ProductsSection.css";
 const ProductsSection = () => {
   return (
     <section id="products" className="products-section">
-      <h2>Nossos Serviços</h2>
+      <h2>Nosso Diferencial</h2>
       <div className="products">
         <div className="product">
           <h3>Tipos de Veículos</h3>
