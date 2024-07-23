@@ -97,3 +97,52 @@
   max-width: 200px; /* Ajuste o valor conforme necessário */
   height: auto; /* Mantém a proporção da imagem */
 }
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem; /* Diminuir o tamanho do título */
+  }
+
+  .hero-content p {
+    font-size: 1.2rem; /* Diminuir o tamanho do parágrafo */
+    max-width: 90%; /* Ajustar a largura máxima */
+  }
+
+  .button-container {
+    flex-direction: column; /* Alinhar botões verticalmente */
+    gap: 15px; /* Espaço reduzido entre os botões */
+  }
+
+  .custom-button {
+    padding: 0.5rem 1rem; /* Reduzir o padding dos botões */
+    font-size: 0.9rem; /* Diminuir o tamanho da fonte */
+  }
+
+  .hero-logo {
+    max-width: 150px; /* Reduzir o tamanho máximo da logo */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 2rem; /* Diminuir ainda mais o tamanho do título */
+  }
+
+  .hero-content p {
+    font-size: 1rem; /* Diminuir ainda mais o tamanho do parágrafo */
+    max-width: 95%; /* Ajustar a largura máxima */
+  }
+
+  .button-container {
+    gap: 10px; /* Espaço ainda menor entre os botões */
+  }
+
+  .custom-button {
+    padding: 0.4rem 0.8rem; /* Reduzir ainda mais o padding dos botões */
+    font-size: 0.8rem; /* Diminuir ainda mais o tamanho da fonte */
+  }
+
+  .hero-logo {
+    max-width: 100px; /* Reduzir o tamanho máximo da logo */
+  }
+}
