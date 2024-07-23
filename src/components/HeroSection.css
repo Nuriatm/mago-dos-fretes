@@ -1,4 +1,3 @@
-/* Animação de entrada do título e do parágrafo */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -17,7 +16,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden; /* Garante que o conteúdo não saia dos limites da seção */
+  overflow: hidden;
 }
 
 .hero-section::before {
@@ -29,7 +28,7 @@
   height: 100%;
   background-color: rgba(15, 4, 112, 0.644);
   z-index: 1;
-  transition: background-color 0.5s ease; /* Transição suave da cor do fundo */
+  transition: background-color 0.5s ease;
 }
 
 .hero-content {
@@ -37,38 +36,34 @@
   z-index: 2;
   color: white;
   text-align: center;
-  opacity: 0; /* Inicialmente invisível para animação */
-  animation: fadeInUp 1s forwards; /* Animação de entrada */
+  opacity: 0;
+  animation: fadeInUp 1s forwards;
 }
 
-/* Estilização do título */
 .hero-content h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
-  opacity: 0; /* Inicialmente invisível para animação */
-  animation: fadeInUp 1s 0.5s forwards; /* Animação de entrada com delay */
+  opacity: 0;
+  animation: fadeInUp 1s 0.5s forwards;
 }
 
-/* Estilização do parágrafo */
 .hero-content p {
   font-size: 1.5rem;
   margin-bottom: 2rem;
-  opacity: 0; /* Inicialmente invisível para animação */
-  animation: fadeInUp 1s 1s forwards; /* Animação de entrada com delay */
+  opacity: 0;
+  animation: fadeInUp 1s 1s forwards;
   max-width: 80%;
-  margin: 0 auto; /* Centraliza o parágrafo horizontalmente */
-  text-align: center; /* Garante que o texto esteja centralizado */
+  margin: 0 auto;
+  text-align: center;
 }
 
-/* Contêiner dos botões alinhado em linha */
 .button-container {
   display: flex;
-  justify-content: center; /* Alinha os botões ao centro */
-  gap: 30px; /* Espaço de 10px entre os botões */
-  margin-top: 1rem; /* Espaço acima dos botões */
+  justify-content: center;
+  gap: 30px;
+  margin-top: 1rem;
 }
 
-/* Estilização dos botões */
 .custom-button {
   padding: 0.75rem 1.5rem;
   background-color: #761dca;
@@ -77,72 +72,71 @@
   color: white;
   cursor: pointer;
   font-size: 1rem;
-  transition: transform 0.3s ease, background-color 0.3s ease; /* Transições para efeito de hover */
+  transition: transform 0.3s ease, background-color 0.3s ease;
   display: flex;
-  align-items: center; /* Alinha o ícone e o texto verticalmente */
+  align-items: center;
+  justify-content: center;
 }
 
 .custom-button:hover {
   background-color: #460a8a;
-  transform: scale(1.1); /* Aumenta o tamanho do botão */
+  transform: scale(1.1);
 }
 
-/* Estilização do ícone dentro do botão */
 .icon {
-  margin-right: 0.5rem; /* Espaçamento entre o ícone e o texto */
+  margin-right: 0.5rem;
 }
 
-/* Estilização do logo */
 .hero-logo {
-  max-width: 200px; /* Ajuste o valor conforme necessário */
-  height: auto; /* Mantém a proporção da imagem */
+  max-width: 200px;
+  height: auto;
 }
 
 @media (max-width: 768px) {
   .hero-content h1 {
-    font-size: 2.5rem; /* Diminuir o tamanho do título */
+    font-size: 2.5rem;
   }
 
   .hero-content p {
-    font-size: 1.2rem; /* Diminuir o tamanho do parágrafo */
-    max-width: 90%; /* Ajustar a largura máxima */
+    font-size: 1.2rem;
+    max-width: 90%;
   }
 
   .button-container {
-    flex-direction: column; /* Alinhar botões verticalmente */
-    gap: 15px; /* Espaço reduzido entre os botões */
+    flex-direction: column;
+    gap: 15px;
   }
 
   .custom-button {
-    padding: 0.5rem 1rem; /* Reduzir o padding dos botões */
-    font-size: 0.9rem; /* Diminuir o tamanho da fonte */
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
   }
 
   .hero-logo {
-    max-width: 150px; /* Reduzir o tamanho máximo da logo */
+    max-width: 150px;
   }
 }
 
 @media (max-width: 480px) {
   .hero-content h1 {
-    font-size: 2rem; /* Diminuir ainda mais o tamanho do título */
+    font-size: 2rem;
   }
 
   .hero-content p {
-    font-size: 1rem; /* Diminuir ainda mais o tamanho do parágrafo */
-    max-width: 95%; /* Ajustar a largura máxima */
+    font-size: 1rem;
+    max-width: 95%;
   }
 
   .button-container {
-    gap: 10px; /* Espaço ainda menor entre os botões */
+    gap: 10px;
   }
 
   .custom-button {
-    padding: 0.4rem 0.8rem; /* Reduzir ainda mais o padding dos botões */
-    font-size: 0.8rem; /* Diminuir ainda mais o tamanho da fonte */
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
   }
 
   .hero-logo {
-    max-width: 100px; /* Reduzir o tamanho máximo da logo */
+    max-width: 100px;
   }
 }
