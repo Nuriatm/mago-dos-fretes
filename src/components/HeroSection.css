@@ -121,3 +121,32 @@
   max-width: 200px;
   height: auto;
 }
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1.2rem;
+    max-width: 90%;
+  }
+
+  .hero-content span {
+    font-size: 1.5rem;
+  }
+
+  .button-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .custom-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  .hero-logo {
+    max-width: 120px;
+  }
+}
