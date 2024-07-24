@@ -35,7 +35,7 @@
 
 .product {
   background-color: #fff;
-  border: 1px solid #ddd;
+  border: 2px solid #ddd;
   border-radius: 8px;
   padding: 1.5rem;
   width: 300px;
@@ -67,6 +67,6 @@
 
 .product:hover {
   transform: scale(1.5); 
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.2);
   z-index: 2; 
 }
