@@ -15,9 +15,7 @@ const HeroSection = () => {
 
   const handleContactRedirect = () => {
     const message = "Gostaria de solicitar um orçamento.";
-    const whatsappUrl = `https://wa.me/5516996109672?text=${encodeURIComponent(
-      message
-    )}`;
+    const whatsappUrl = `https://w.app/magodosfretes`;
     window.open(whatsappUrl, "_blank");
   };
 
