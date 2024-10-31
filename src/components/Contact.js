@@ -8,7 +8,9 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const message = `Olá, meu nome é ${name} e gostaria de solicitar um orçamento.`;
-    const whatsappUrl = `https://wa.link/7yj9gw`;
+    const encodedMessage = encodeURIComponent(message); // Codifica a mensagem
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=5516997420972&text=${encodedMessage}`;
+    
     window.open(whatsappUrl, "_blank");
   };
 
