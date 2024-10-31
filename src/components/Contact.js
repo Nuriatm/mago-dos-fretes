@@ -7,10 +7,8 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const message = `Oi, meu nome é ${name} e gostaria de solicitar um orçamento.`;
-    const whatsappUrl = `https://wa.me/5516996109672?text=${encodeURIComponent(
-      message
-    )}`;
+    const message = `, meu nome é ${name} e gostaria de solicitar um orçamento.`;
+    const whatsappUrl = `https://w.app/magofretes`;
     window.open(whatsappUrl, "_blank");
   };
 
