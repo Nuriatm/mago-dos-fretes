@@ -10,12 +10,12 @@ const About = () => {
           <h2>Sobre Nós</h2>
           <p>
             Com uma frota de mais de{" "}
-            <span className="highlight">1.000 veículos leves</span>, atuamos em{" "}
+            <span className="highlight">2.000 veículos</span>, atuamos em{" "}
             <span className="highlight">todo o Brasil</span> para atender suas
             demandas logísticas com agilidade e eficiência. <br />
             <br />
             Nossos serviços incluem{" "}
-            <span className="highlight">fretes rastreados e refrigerados</span>,
+            <span className="highlight">fretes rastreados, refrigerados e de cargas perigosas</span>,
             garantindo a <span className="highlight">integridade</span> e{" "}
             <span className="highlight">segurança</span> dos seus produtos. Além
             disso, garantimos a{" "}
@@ -23,7 +23,7 @@ const About = () => {
             nosso compromisso com <span className="highlight">segurança</span>.{" "}
             <br />
             <br />
-            Com <span className="highlight">7 anos de experiência</span>, o Mago
+            Com <span className="highlight">8 anos de experiência</span>, o Mago
             dos Fretes é sinônimo de{" "}
             <span className="highlight">confiança</span> e{" "}
             <span className="highlight">excelência</span>. <br />
